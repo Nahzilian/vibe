@@ -1,0 +1,35 @@
+{
+  "name": "vibe",
+  "version": "1.0.0",
+  "description": "Purpose of the project: To learn about API, react and learn about the structure of backend and frontend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development ./backend/frontend/src/index.js --output ./backend/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./backend/frontend/src/index.js --output ./backend/frontend/static/frontend/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nahzilian/vibe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nahzilian/vibe/issues"
+  },
+  "homepage": "https://github.com/Nahzilian/vibe#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
