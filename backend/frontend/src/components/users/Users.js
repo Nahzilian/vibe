@@ -1,6 +1,12 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { getUsers } from '../../actions/users';
 export class Users extends Component {
+    static PropTypes = {
+        users: PropTypes.array.isRequired
+    }
+
     render() {
         return (
             <div>
@@ -9,5 +15,8 @@ export class Users extends Component {
         )
     }
 }
+const mapStateToProps = state => ({
+    users: state.users.users
+});
 
-export default Users
+export default connect(mapStateToProps)(Users);
