@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getUsers } from '../../actions/users';
 export class Users extends Component {
-    static PropTypes = {
+    static propTypes = {
         users: PropTypes.array.isRequired
     }
 
